@@ -1,0 +1,41 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ===== 数据文件 =====
+# 经济学项目最容易犯的错：把几百 MB 的数据集传上去。
+# 小样本 CSV（几百行）可以传，大的一律忽略。
+*.dta
+*.parquet
+*.feather
+*.h5
+*.zip
+*.gz
+*.7z
+
+# ===== Excel =====
+~$*.xlsx
+*.xlsb
+
+# ===== 机密：绝对不要传 =====
+.env
+secrets.json
+*_key.txt
+config_private.py
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 编辑器 =====
+.vscode/
+.idea/
+
+# ===== 输出 =====
+output/
+figures/_tmp/
